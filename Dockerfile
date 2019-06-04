@@ -5,6 +5,6 @@ COPY html/cgi-bin/aword.py /html/cgi-bin
 COPY html/cgi-bin/words /html/cgi-bin
 COPY privkey.pem /
 COPY fullchain.pem /
-COPY server.py /
-EXPOSE 8443
-CMD /server.py
+COPY servers.py /
+EXPOSE 8082
+CMD /servers.py
