@@ -4,7 +4,7 @@ import os, sys
 from http.server import HTTPServer, CGIHTTPRequestHandler
 
 webdir = "html"
-port = os.getenv('PORT') or 8082
+port = int(os.getenv('PORT')) or 8082
 os.chdir(webdir)
 srvaddr = ('', port)
 srvobj = HTTPServer(srvaddr, CGIHTTPRequestHandler)
