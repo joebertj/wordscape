@@ -1,1 +1,1 @@
-(cat body; uuencode single\ page.docx resume.doc) > bodyattach
+(cat body; uuencode resume.doc resume.doc) > bodyattach
