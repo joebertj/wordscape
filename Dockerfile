@@ -6,6 +6,7 @@ RUN sed -i "s/^dc_eximconfig_configtype=.\+/dc_eximconfig_configtype='smarthost'
 RUN sed -i "s/^dc_other_hostnames=.\+/dc_other_hostnames='kenchlightyear.com'/" /etc/exim4/update-exim4.conf.conf
 WORKDIR /app
 RUN mkdir -p html/cgi-bin
+COPY html/. html
 COPY html/cgi-bin/. html/cgi-bin
 COPY server.py .
 ENV PORT 8080
