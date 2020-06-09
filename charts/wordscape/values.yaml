@@ -9,6 +9,9 @@ image:
 
 # define environment variables here as a map of key: value
 env:
+  RELAY_USER: vault:app/wordscape:username
+  RELAY_PASS: vault:app/wordscape:password
+  RELAY_HOST: vault:app/wordscape:hostname
 
 # enable this flag to use knative serve to deploy the app
 knativeDeploy: false
