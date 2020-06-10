@@ -18,9 +18,9 @@ knativeDeploy: false
 
 # HorizontalPodAutoscaler
 hpa:
-  enabled: false
+  enabled: true
   minReplicas: 2
-  maxReplicas: 6
+  maxReplicas: 20
   cpuTargetAverageUtilization: 80
   memoryTargetAverageUtilization: 80
 
